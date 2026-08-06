@@ -14,7 +14,21 @@ const Dashboard = () => {
   return (
     <Layout>
       <div className="dashboard">
-        <h1>Dashboard Overview</h1>
+        <div className="dashboard-header">
+          <div>
+            <h1>Good Evening, Hamza 👋</h1>
+            <p>Welcome back to Enterprise Analytics Dashboard.</p>
+          </div>
+
+          <div className="dashboard-date">
+            {new Date().toLocaleDateString("en-US", {
+              weekday: "long",
+              year: "numeric",
+              month: "long",
+              day: "numeric",
+            })}
+          </div>
+        </div>
 
         <div className="stats-grid">
           {dashboardStats.map((item) => (
