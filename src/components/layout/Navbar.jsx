@@ -1,5 +1,6 @@
-import { FaBell, FaMoon, FaSearch, FaUserCircle } from "react-icons/fa";
+import { FaBell, FaSearch, FaUserCircle } from "react-icons/fa";
 import "../../styles/navbar.css";
+import ThemeToggle from "../common/ThemeToggle";
 
 const Navbar = () => {
   return (
@@ -11,10 +12,7 @@ const Navbar = () => {
       </div>
 
       <div className="navbar-right">
-
-        <button className="icon-btn">
-          <FaMoon />
-        </button>
+        <ThemeToggle />
 
         <button className="icon-btn">
           <FaBell />

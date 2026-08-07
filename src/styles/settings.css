@@ -1,0 +1,53 @@
+.settings-page{
+    padding:20px;
+}
+
+.settings-page h1{
+    font-size:30px;
+    margin-bottom:10px;
+}
+
+.settings-page p{
+    color:#64748b;
+    margin-bottom:25px;
+}
+
+.settings-card{
+    background:#fff;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 4px 10px rgba(0,0,0,.1);
+    max-width:700px;
+}
+
+.setting-item{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+    padding-bottom:15px;
+    border-bottom:1px solid #eee;
+}
+
+.setting-item label{
+    font-weight:600;
+}
+
+.setting-item select{
+    padding:8px 12px;
+    border-radius:6px;
+}
+
+.save-btn{
+    background:#2563eb;
+    color:#fff;
+    border:none;
+    padding:12px 25px;
+    border-radius:8px;
+    cursor:pointer;
+    margin-top:15px;
+}
+
+.save-btn:hover{
+    background:#1d4ed8;
+}

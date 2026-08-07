@@ -1,0 +1,13 @@
+body.dark{
+    background:#0f172a;
+    color:white;
+}
+
+body.dark .stat-card,
+body.dark .chart-card,
+body.dark .table-card,
+body.dark .activity-card,
+body.dark .products-card{
+    background:#1e293b;
+    color:white;
+}

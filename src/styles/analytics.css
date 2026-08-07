@@ -25,3 +25,26 @@
 }
 
 }
+
+.analytics-cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.analytics-card{
+    background:#fff;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,.1);
+}
+
+.analytics-card h3{
+    color:#64748b;
+    margin-bottom:10px;
+}
+
+.analytics-card h2{
+    color:#2563eb;
+    font-size:30px;
+}

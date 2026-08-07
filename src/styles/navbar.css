@@ -71,3 +71,18 @@
   font-size: 13px;
   color: #64748b;
 }
+
+@media (max-width: 768px) {
+  .search-box {
+    display: none;
+  }
+
+  .profile h4,
+  .profile p {
+    display: none;
+  }
+
+  .navbar {
+    padding: 15px;
+  }
+}

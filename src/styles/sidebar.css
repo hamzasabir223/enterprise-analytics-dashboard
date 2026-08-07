@@ -47,3 +47,25 @@
 .logout {
   margin-top: 40px;
 }
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 220px;
+    position: fixed;
+    left: -220px;
+    top: 0;
+    height: 100vh;
+    transition: 0.3s;
+    z-index: 1000;
+  }
+
+  .main-content {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .navbar {
+    margin-left: 0;
+    width: 100%;
+  }
+}
