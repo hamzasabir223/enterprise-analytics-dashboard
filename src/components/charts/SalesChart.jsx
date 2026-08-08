@@ -22,7 +22,16 @@ const SalesChart = () => {
   return (
     <div className="chart-card">
       <h3>Weekly Sales</h3>
-      <Bar data={salesData} />
+
+      <div className="sales-chart">
+        <Bar
+          data={salesData}
+          options={{
+            responsive: true,
+            maintainAspectRatio: false,
+          }}
+        />
+      </div>
     </div>
   );
 };

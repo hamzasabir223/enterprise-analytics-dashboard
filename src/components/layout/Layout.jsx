@@ -1,25 +1,20 @@
 import Sidebar from "./Sidebar";
 import Navbar from "./Navbar";
+import "../../styles/layout.css";
 
 const Layout = ({ children }) => {
   return (
-    <>
+    <div className="app-layout">
       <Sidebar />
 
-      <div
-        style={{
-          marginLeft: "250px",
-          minHeight: "100vh",
-          background: "#f8fafc",
-        }}
-      >
+      <div className="main-content">
         <Navbar />
 
-        <main style={{ padding: "20px" }}>
+        <main className="page-content">
           {children}
         </main>
       </div>
-    </>
+    </div>
   );
 };
 

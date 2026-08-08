@@ -26,7 +26,16 @@ const RevenueChart = () => {
   return (
     <div className="chart-card">
       <h3>Revenue Overview</h3>
-      <Line data={revenueData} />
+
+      <div className="revenue-chart">
+        <Line
+          data={revenueData}
+          options={{
+            responsive: true,
+            maintainAspectRatio: false,
+          }}
+        />
+      </div>
     </div>
   );
 };

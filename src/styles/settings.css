@@ -7,6 +7,10 @@
     margin-bottom:10px;
 }
 
+body.dark .settings-page h1{
+    color:#f1f5f9;
+}
+
 .settings-page p{
     color:#64748b;
     margin-bottom:25px;

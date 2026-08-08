@@ -1,0 +1,29 @@
+.app-layout {
+  min-height: 100vh;
+  background: #f8fafc;
+}
+
+.main-content {
+  margin-left: 250px;
+  width: calc(100% - 250px);
+  min-height: 100vh;
+}
+
+.page-content {
+  padding: 20px;
+}
+
+body.dark .app-layout {
+  background: #0f172a;
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .page-content {
+    padding: 15px;
+  }
+}

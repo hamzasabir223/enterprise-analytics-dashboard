@@ -36,15 +36,23 @@ const Dashboard = () => {
               key={item.title}
               title={item.title}
               value={item.value}
+              change={item.change}
               color={item.color}
+              icon={item.icon}
             />
           ))}
         </div>
         <div className="chart-grid">
           <RevenueChart />
           <SalesChart />
+        </div>
+        
+        <div className="bottom-grid">
           <RecentOrders />
           <PieChart />
+        </div>
+
+        <div className="last-grid">
           <RecentActivity />
           <TopProducts />
         </div>

@@ -4,18 +4,23 @@ import "../../styles/dashboard.css";
 const RecentActivity = () => {
   return (
     <div className="activity-card">
-      <h3>Recent Activity</h3>
+      <div className="card-header">
+        <h3>Recent Activity</h3>
+        <span>Latest updates</span>
+      </div>
 
-      {recentActivities.map((activity) => (
-        <div className="activity-item" key={activity.id}>
-          <div className="activity-dot"></div>
+      <div className="activity-list">
+        {recentActivities.map((activity) => (
+          <div className="activity-item" key={activity.id}>
+            <div className="activity-dot"></div>
 
-          <div>
-            <h4>{activity.action}</h4>
-            <p>{activity.time}</p>
+            <div>
+              <h4>{activity.action}</h4>
+              <p>{activity.time}</p>
+            </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 };
