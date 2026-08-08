@@ -5,35 +5,72 @@ const Profile = () => {
   return (
     <Layout>
       <div className="profile-page">
-        <h1>My Profile</h1>
-        <p>Manage your personal information.</p>
 
-        <div className="profile-card">
-          <div className="profile-avatar">
-            <h2>HS</h2>
+        <div className="profile-header">
+          <div>
+            <h1>My Profile</h1>
+            <p>Manage your account information.</p>
           </div>
 
-          <div className="profile-info">
-            <h3>Hamza Sabir</h3>
-            <p>Administrator</p>
-
-            <div className="info-item">
-              <strong>Email:</strong> hamza@example.com
-            </div>
-
-            <div className="info-item">
-              <strong>Phone:</strong> +92 300 1234567
-            </div>
-
-            <div className="info-item">
-              <strong>Location:</strong> Peshawar, Pakistan
-            </div>
-
-            <button className="edit-btn">
-              Edit Profile
-            </button>
-          </div>
+          <button className="edit-profile-btn">
+            Edit Profile
+          </button>
         </div>
+
+        <div className="profile-layout">
+
+          <div className="profile-card-main">
+            <div className="profile-avatar">
+              HS
+            </div>
+
+            <h2>Hamza Sabir</h2>
+            <p className="profile-role">Administrator</p>
+
+            <div className="profile-info">
+              <div>
+                <span>Email</span>
+                <strong>hamza@example.com</strong>
+              </div>
+
+              <div>
+                <span>Role</span>
+                <strong>Administrator</strong>
+              </div>
+
+              <div>
+                <span>Member Since</span>
+                <strong>January 2026</strong>
+              </div>
+            </div>
+          </div>
+
+          <div className="profile-details-card">
+            <h3>Account Details</h3>
+
+            <div className="detail-row">
+              <span>Full Name</span>
+              <strong>Hamza Sabir</strong>
+            </div>
+
+            <div className="detail-row">
+              <span>Email Address</span>
+              <strong>hamza@example.com</strong>
+            </div>
+
+            <div className="detail-row">
+              <span>Account Status</span>
+              <span className="account-active">Active</span>
+            </div>
+
+            <div className="detail-row">
+              <span>Last Login</span>
+              <strong>Today</strong>
+            </div>
+          </div>
+
+        </div>
+
       </div>
     </Layout>
   );

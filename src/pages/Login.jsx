@@ -5,14 +5,14 @@ const Login = () => {
   const navigate = useNavigate();
 
   const handleLogin = (e) => {
-    e.preventDefault(); // Form reload hone se rokta hai
+    e.preventDefault();
 
-    // Abhi authentication nahi hai
+    // Demo authentication
     navigate("/dashboard");
   };
 
   return (
-    <div className="login-container">
+    <div className="login-page">
       <div className="login-card">
         <div className="login-header">
           <h1>Enterprise Analytics</h1>
@@ -22,12 +22,20 @@ const Login = () => {
         <form className="login-form" onSubmit={handleLogin}>
           <div className="input-group">
             <label>Email Address</label>
-            <input type="email" placeholder="Enter your email" />
+            <input
+              type="email"
+              placeholder="Enter your email"
+              required
+            />
           </div>
 
           <div className="input-group">
             <label>Password</label>
-            <input type="password" placeholder="Enter your password" />
+            <input
+              type="password"
+              placeholder="Enter your password"
+              required
+            />
           </div>
 
           <div className="login-options">
@@ -36,7 +44,9 @@ const Login = () => {
               Remember Me
             </label>
 
-            <a href="#">Forgot Password?</a>
+            <a href="#" onClick={(e) => e.preventDefault()}>
+              Forgot Password?
+            </a>
           </div>
 
           <button className="login-btn" type="submit">

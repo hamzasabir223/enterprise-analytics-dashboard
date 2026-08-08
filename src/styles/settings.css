@@ -1,57 +1,107 @@
-.settings-page{
-    padding:20px;
+.settings-page {
+  padding: 5px;
 }
 
-.settings-page h1{
-    font-size:30px;
-    margin-bottom:10px;
+.settings-header {
+  margin-bottom: 25px;
 }
 
-body.dark .settings-page h1{
-    color:#f1f5f9;
+.settings-header h1 {
+  margin: 0;
+  font-size: 30px;
+  color: #1e293b;
 }
 
-.settings-page p{
-    color:#64748b;
-    margin-bottom:25px;
+body .dark .settings-header h1 {
+  color: #f8fafc;
 }
 
-.settings-card{
-    background:#fff;
-    padding:25px;
-    border-radius:12px;
-    box-shadow:0 4px 10px rgba(0,0,0,.1);
-    max-width:700px;
+.settings-header p {
+  margin-top: 6px;
+  color: #64748b;
 }
 
-.setting-item{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    margin-bottom:20px;
-    padding-bottom:15px;
-    border-bottom:1px solid #eee;
+.settings-card {
+  background: white;
+  padding: 22px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.08);
 }
 
-.setting-item label{
-    font-weight:600;
+.settings-card h3 {
+  margin-bottom: 10px;
+  color: #1e293b;
 }
 
-.setting-item select{
-    padding:8px 12px;
-    border-radius:6px;
+.setting-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding: 18px 0;
+  border-bottom: 1px solid #e5e7eb;
 }
 
-.save-btn{
-    background:#2563eb;
-    color:#fff;
-    border:none;
-    padding:12px 25px;
-    border-radius:8px;
-    cursor:pointer;
-    margin-top:15px;
+.setting-row:last-child {
+  border-bottom: none;
 }
 
-.save-btn:hover{
-    background:#1d4ed8;
+.setting-row h4 {
+  margin-bottom: 5px;
+  color: #334155;
+}
+
+.setting-row p {
+  color: #64748b;
+  font-size: 14px;
+}
+
+.toggle-btn {
+  width: 48px;
+  height: 26px;
+  border: none;
+  border-radius: 20px;
+  background: #cbd5e1;
+  padding: 3px;
+  cursor: pointer;
+}
+
+.toggle-btn span {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: white;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.toggle-btn.on {
+  background: #2563eb;
+}
+
+.toggle-btn.on span {
+  transform: translateX(22px);
+}
+
+.setting-row input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #2563eb;
+}
+
+.change-btn {
+  border: none;
+  background: #eff6ff;
+  color: #2563eb;
+  padding: 9px 15px;
+  border-radius: 7px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  .setting-row {
+    align-items: flex-start;
+  }
 }

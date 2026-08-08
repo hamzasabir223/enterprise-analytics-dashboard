@@ -1,0 +1,105 @@
+/* =========================
+   DARK MODE - ALL PAGES
+========================= */
+
+body.dark {
+  background: #0f172a;
+  color: #f8fafc;
+}
+
+/* Main page backgrounds */
+body.dark .analytics-page,
+body.dark .reports-page,
+body.dark .notifications-page,
+body.dark .profile-page,
+body.dark .settings-page {
+  color: #f8fafc;
+}
+
+/* Headings */
+body.dark h1,
+body.dark h2,
+body.dark h3,
+body.dark h4 {
+  color: #f8fafc;
+}
+
+/* Paragraphs */
+body.dark p {
+  color: #cbd5e1;
+}
+
+/* Cards */
+body.dark .analytics-card,
+body.dark .overview-card,
+body.dark .report-stat-card,
+body.dark .reports-table-card,
+body.dark .notifications-card,
+body.dark .profile-card-main,
+body.dark .profile-details-card,
+body.dark .settings-card {
+  background: #1e293b;
+  color: #f8fafc;
+}
+
+/* Card text */
+body.dark .analytics-card span,
+body.dark .notification-summary span,
+body.dark .profile-info span,
+body.dark .detail-row span {
+  color: #cbd5e1;
+}
+
+/* Tables */
+body.dark .reports-table th,
+body.dark .reports-table td,
+body.dark .orders-table th,
+body.dark .orders-table td {
+  border-color: #334155;
+}
+
+body.dark .reports-table th,
+body.dark .orders-table th {
+  color: #cbd5e1;
+}
+
+body.dark .reports-table td,
+body.dark .orders-table td {
+  color: #f8fafc;
+}
+
+/* Notification items */
+body.dark .notification-item {
+  border-color: #334155;
+}
+
+/* Profile / Settings rows */
+body.dark .profile-info div,
+body.dark .detail-row,
+body.dark .setting-row {
+  border-color: #334155;
+}
+
+body.dark .profile-info strong,
+body.dark .detail-row strong,
+body.dark .setting-row h4 {
+  color: #f8fafc;
+}
+
+/* Reports / Settings headings */
+body.dark .reports-header h1,
+body.dark .notifications-header h1,
+body.dark .profile-header h1,
+body.dark .settings-header h1 {
+  color: #f8fafc;
+}
+
+/* Chart cards */
+body.dark .chart-card {
+  background: #1e293b;
+  color: #f8fafc;
+}
+
+body.dark .chart-card h3 {
+  color: #f8fafc;
+}
